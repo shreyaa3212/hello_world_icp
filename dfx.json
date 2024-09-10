@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "gh_backend": {
+      "main": "src/gh_backend/main.mo",
+      "type": "motoko"
+    },
+    "gh_frontend": {
+      "dependencies": [
+        "gh_backend"
+      ],
+      "source": [
+        "src/gh_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "gh_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
